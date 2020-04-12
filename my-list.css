@@ -1,0 +1,72 @@
+/* header, body layouts */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: rift-soft, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 1px 5px gray;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+main {
+    margin: 0;
+    background: white;
+}
+html body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container {
+    display: grid;
+    max-width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background: white;
+    grid-template-rows: repeat(4, max-content);
+}
+
+/* header, nav menu layouts */
+
+.header {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    box-shadow: 0px 10px 20px 0px black;
+    z-index: 100;
+}
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px;
+}
+.navItem {
+    padding: 20px;
+    font-family: omnes-pro;
+    font-weight: 500;
+}
+.store {
+    display: flex;
+    justify-content: center;
+    font-family: omnes-pro;
+    font-weight: 600;   
+}
+
+/* Item Input */
+
+.itemInput {
+    margin: 100px;
+    height: auto;
+    width: auto;
+    outline: none;
+    border-style: none none solid none;
+    border-color: black;
+    border-width: 1px;
+    font-family: omnes-pro;
+    font-size: 40px;
+}

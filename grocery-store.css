@@ -1,0 +1,115 @@
+/* header, body layouts */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: rift-soft;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 1px 5px gray;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+main {
+    margin: 0;
+    background: white;
+}
+html body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container {
+    display: grid;
+    max-width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background: white;
+    grid-template-rows: repeat(4, max-content);
+}
+
+/* header, nav menu layouts */
+
+.header {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    box-shadow: 0px 10px 20px 0px black;
+    z-index: 100;
+}
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px;
+}
+.navItem {
+    padding: 20px;
+    font-family: omnes-pro;
+    font-weight: 500;
+}
+.store {
+    display: flex;
+    justify-content: center;
+    font-family: omnes-pro;
+    font-weight: 600;   
+}
+
+/* Hero Image */
+
+.heroImage {
+    height: 80vh;
+    background-color: teal;
+    z-index: 0;
+}
+
+/* Card Styles */
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50vh;
+    padding: 5%;
+}
+.card1, .card2, .card3 {
+    margin: 20px;
+    border-radius: 15%;
+    box-shadow: 0 0 15px gray;
+    height: 80%;
+    width: 85%;
+    /* border: 3px solid black */
+}
+.cards {
+    font-family: omnes-pro;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+/* Footer Styling */
+
+footer {
+    background: white;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    font-family: omnes-pro;
+    padding: 20px 0px 20px 0px;
+    box-shadow: 0px 1px 15px 1px black;
+}
+.logoFooter{
+    font-family: rift-soft;
+    font-size: 30px;
+    padding-left: 20px;
+}
+.backToTop {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.navFooter{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+}
