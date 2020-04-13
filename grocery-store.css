@@ -61,7 +61,9 @@ html body {
 
 .heroImage {
     height: 80vh;
-    background-color: teal;
+    background-image: url("heroImage.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     z-index: 0;
 }
 
