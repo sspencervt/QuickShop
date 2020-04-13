@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="my-list.css">
         <link rel="stylesheet" href="https://use.typekit.net/aku3zlr.css">
+        <script src="my-list.js" defer></script>
     </head>
     <body>
         <div class="container">
@@ -17,8 +18,15 @@
                 <h2 class="store">Store</h2>
             </header>
     <main>
-        <input type="text" class="itemInput" placeholder="Input Item Here">
-
+        <div class="submitItemContainer">
+            <input type="text" class="itemInput" placeholder="Input Item Here">
+            <button class="addItemButton">ADD</button>
+        
+        <ul class="list"></ul>
+        <div class="myList">
+            <h1 class="output"></h1>
+        </div>
+    </div>
     </main>
     <footer>
 

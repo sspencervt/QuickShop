@@ -61,12 +61,41 @@ html body {
 
 .itemInput {
     margin: 100px;
-    height: auto;
-    width: auto;
+    height: 30%;
+    width: 60%;
     outline: none;
     border-style: none none solid none;
     border-color: black;
     border-width: 1px;
     font-family: omnes-pro;
-    font-size: 40px;
+    font-size: 30px;
+}
+.submitItemContainer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+.addItemButton {
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+    height: 30px;
+    width: 70px;
+    margin-left: 100px;
+    border: none;
+    background-color: white;
+    box-shadow: inset 0 0 5px black;
+    border-radius: 10%;
+}
+
+/* List Styling */
+
+li {
+    padding: 5px;
+    font-family: omnes-pro;
+    font-size: 25px;
+    list-style-type: none;
+}
+.list {
+    grid-area: 1/2/2/3;
 }
